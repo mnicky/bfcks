@@ -2,6 +2,11 @@
   (:use clojure.test
         bfcks.simple))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest basic-interpret-test
+    (is (= [0 0 0] (interpret "" 3)))
+    (is (= [1 0 0] (interpret "+" 3)))
+    (is (= [0 1 0] (interpret ">+" 3)))
+    (is (= [0 0 -1] (interpret ">>-" 3)))
+    (is (= [3 0 0] (interpret "><+++" 3)))
+    (is (= [2 0 0] (interpret "++nocode" 3)))
+  )
