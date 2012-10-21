@@ -1,5 +1,5 @@
 (defproject bfcks "0.1.0-SNAPSHOT"
-  :description "Collection of Brainf**k interpreters written in Clojure."
+  :description "Rather simple Brainf**k interpreter written in Clojure."
   :url "http://github.com/mnicky/bfcks"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}

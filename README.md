@@ -1,6 +1,6 @@
 # bfcks
 
-Collection of [Brainf**k](http://en.wikipedia.org/wiki/Brainfuck) interpreters written in [Clojure](http://clojure.org).
+Rather simple [Brainf**k](http://en.wikipedia.org/wiki/Brainfuck) interpreter written in [Clojure](http://clojure.org).
 
 Copyright © 2012 [Mnicky](http://mnicky.github.com)
 
