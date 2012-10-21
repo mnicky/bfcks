@@ -1,4 +1,5 @@
-(ns bfcks.simple)
+(ns ^{:doc "Very simple interpreter of brainf**k programming language."}
+  bfcks.simple)
 
 (defn skip
   "Skips all following instructions until the end of the [...] block and
