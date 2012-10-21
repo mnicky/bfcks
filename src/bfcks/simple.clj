@@ -1,4 +1,5 @@
-(ns ^{:doc "Very simple interpreter of brainf**k programming language."}
+(ns ^{:doc "Very simple interpreter of brainf**k programming language.
+See and http://en.wikipedia.org/wiki/Brainfuck for more information."}
   bfcks.simple)
 
 (defn skip
