@@ -32,9 +32,9 @@
               \< (recur (inc instr-p) (dec cell-p) cells stack)
               \+ (recur (inc instr-p) cell-p (assoc cells cell-p (wrap (inc cell))) stack)
               \- (recur (inc instr-p) cell-p (assoc cells cell-p (wrap (dec cell))) stack)
-              \. (do (.write out (cells cell-p))
+              \. (do (.write out cell)
                      (recur (inc instr-p) cell-p cells stack))
-              \, (recur (inc instr-p) cell-p (assoc cells cell-p (.read in)) stack)
+              \, (recur (inc instr-p) cell-p (assoc cells cell-p (wrap (.read in))) stack)
               \[ (if (zero? cell)
                    (recur (skip instr-p code) cell-p cells stack)
                    (recur (inc instr-p) cell-p cells (conj stack instr-p)))
@@ -43,5 +43,6 @@
 
 (comment
 ;print 'Hello World!'
+(use 'bfcks.simple)
 (dorun (interpret "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."))
 )
