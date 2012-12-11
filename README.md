@@ -9,8 +9,7 @@ Usage
 (use 'bfcks.simple)
 (dorun (interpret "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++
                    ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."))
-;=> 'Hello World!'
-;=> nil
+;=> Hello World!
 ```
 
 Copyright © 2012 [Mnicky](http://mnicky.github.com)
